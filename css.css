@@ -132,3 +132,45 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
+#letter , #text1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(13, 5, 25, 0.852);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    color: white;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+}
+#letter .form{
+    display: flex;
+    width: 40%;
+    padding-right: 100px;
+}
+#letter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+#letter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+}
+#letter input{
+    height: 50px;
+    padding: 0 4px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#letter button{
+    background-color: aquamarine;
+    color: white;
+    white-space: nowrap;
+}
