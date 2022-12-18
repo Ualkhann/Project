@@ -117,3 +117,18 @@ body{
     font-weight: 700;
     color: #088178;
 }
+#page{
+    text-align: center;
+}
+#page a{
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+#page a i{
+    font-size: 16px;
+    font-weight: 600;
+}
