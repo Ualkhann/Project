@@ -7,6 +7,10 @@
 body{
     width: 100%;
 }
+@media(max-width: 477px){
+    .p1{
+        padding: 20px;
+    }
 #header{
     display: flex;
     align-items: center;
@@ -173,4 +177,166 @@ body{
     background-color: aquamarine;
     color: white;
     white-space: nowrap;
+}
+#header1.blog-header{
+    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
+}
+#blog {
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+    padding-left: 50px;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+#blog .blog-details a:hover{
+    color: aquamarine;
+}
+#blog{
+    padding: 100px 20px 0 20px;
+}
+#blog .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#blog .blog-img{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+#blog .blog-details{
+    width: 100%;
+}
+}
+#header1.blog-header{
+    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
+}
+#blog {
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+    padding-left: 50px;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+#blog .blog-details a:hover{
+    color: aquamarine;
+}
+#blog{
+    padding: 100px 20px 0 20px;
+}
+#blog .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#blog .blog-img{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+#blog .blog-details{
+    width: 100%;
+}
+}
+#header1.blog-header{
+    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
+}
+#blog {
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+    padding-left: 50px;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+#blog .blog-details a:hover{
+    color: aquamarine;
+}
+#blog{
+    padding: 100px 20px 0 20px;
+}
+#blog .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#blog .blog-img{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+#blog .blog-details{
+    width: 100%;
+}
 }
