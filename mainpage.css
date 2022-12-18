@@ -49,7 +49,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #E3E6F3;
+    background: #edc9b4;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -87,4 +87,38 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#hero {
+    background-image: url("https://www.azyaamode.com/files/stories/group0/original/FA18_MK_JEWELRY_LIFESTYLE_HORI_4.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: #088178;
+}
+
+#hero button{
+    background-image: url("C:/Users/демо/Downloads/img/img/button.png");
+    background-color: transparent;
+    color: #088178;
+    border:0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
