@@ -271,3 +271,117 @@ product1 .pro:hover{
     background-color:#088178;
     color:#fff;
 }
+
+
+#letter , #text1{ 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    background-color: rgba(13, 5, 25, 0.852); 
+    background-repeat: no-repeat; 
+    background-position: 20% 30%; 
+    color: white; 
+    padding-top: 50px; 
+    padding-left: 100px; 
+    padding-bottom: 150px; 
+} 
+#letter .form{ 
+    display: flex; 
+    width: 40%; 
+    padding-right: 100px; 
+} 
+#letter h4{ 
+    font-size: 22px; 
+    font-weight: 700; 
+    color: white; 
+} 
+#letter p{ 
+    font-size: 15px; 
+    font-weight: 600; 
+    color: gray; 
+} 
+#letter input{ 
+    height: 50px; 
+    padding: 0 4px; 
+    font-size: 14px; 
+    width: 100%; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    outline: none; 
+} 
+#letter button{ 
+    background-color: #088178; 
+    color: white; 
+    white-space: nowrap; 
+} 
+#blog .blog-details a:hover{ 
+    color: #088178; 
+} 
+ 
+#footer{ 
+    background-color: white; 
+    padding: 70px 0; 
+} 
+#footer .footer-container{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+#footer .row{ 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+#footer .foot{ 
+    list-style: none; 
+} 
+#footer .footer-col{ 
+    width: 25%; 
+    padding: 0 15px; 
+} 
+#footer .footer-col h4{ 
+    font-size: 18px; 
+    color: #088178; 
+    text-decoration: capitalize; 
+    margin-bottom: 30px; 
+    font-weight: 500; 
+    position: relative; 
+} 
+#footer .footer-col .foot li a{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 300; 
+    color: black; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .foot li a:hover{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: #088178; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .links a{ 
+    display: inline-block; 
+    height: 40px; 
+    width: 40px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px 10px 0; 
+    text-align: center; 
+    line-height: 40px; 
+    color: white; 
+    transition: all 0.5s ease; 
+} 
+#footer .footer-col .links a:hover{ 
+    color: #24262b; 
+    background-color: white; 
+}
+@media screen and (max-width: 1200px){
+    .hero {
+      width: 250%;
+    }}
+
