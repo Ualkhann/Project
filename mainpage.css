@@ -50,7 +50,7 @@ button.normal{
     cursor: pointer;
     border: none;
     outline: none;
-    transaction: 0.2s;
+    transition: 0.2s;
 }
 
 body {
