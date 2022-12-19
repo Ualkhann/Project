@@ -7,12 +7,14 @@
 body{
     width: 100%;
 }
+
+
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: whitesmoke;
+    background: white;
     box-shadow: 0 5px 15px black(0, 0, 0, 0.06);
 }
 #nav{
@@ -33,16 +35,16 @@ body{
     transition: 0.3s ease;
 }
 #nav li a:hover{
-    color:aquamarine;
+    color:#088178;
 }
 #nav li a.active{
-    color:aquamarine;
+    color:#088178;
 }
 #nav li  a.active::after{
     content: "";
     width: 30%;
     height: 2px;
-    background: aquamarine;
+    background: #088178;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -51,7 +53,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: aquamarine;
+    background:#088178;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -70,59 +72,12 @@ body{
     color: white;
     font-size: 35px;
 }
-
-#product1{
-    text-align: center;
-}
-#product1 .pro-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
-}
-#product1 .product{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
-    margin: 15px 0;
-    transition: 0.2s ease;
-}
-#product1 .product:hover{
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
-}
-#product1 .product img{
-    width: 100%;
-    border-radius: 20px;
-}
-#product1 .product .text{
-    text-align: start;
-    padding: 10px 0;
-}
-#product1 .product .text span{
-    color: #606063;
-    font-size: 13px;
-}
-#product1 .product .text h5{
-    color: #1a1a1a;
-    font-size: 15px;
-    padding-top: 7px;
-}
-#product1 .product .text h4{
-    font-size: 15px;
-    padding-top: 7px;
-    font-weight: 700;
-    color: #088178;
-}
 #page{
     text-align: center;
 }
 #page a{
     text-decoration: none;
-    background-color: aquamarine;
+    background-color: #088178;
     padding: 15px 20px;
     border-radius: 4px;
     color: white;
@@ -170,12 +125,13 @@ body{
     outline: none;
 }
 #letter button{
-    background-color: aquamarine;
+    background-color: #088178;
     color: white;
     white-space: nowrap;
 }
+
 #header1.blog-header{
-    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
+    background-image: url("images.jpg");
 }
 #blog {
     padding: 150px 150px 0 150px;
@@ -209,116 +165,9 @@ body{
     transition: 0.3s;
 }
 #blog .blog-details a:hover{
-    color: aquamarine;
+    color: #088178;
 }
-#blog{
-    padding: 100px 20px 0 20px;
-}
-#blog .blog-box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#blog .blog-img{
-    width: 100%;
-    margin-right: 0px;
-    margin-bottom: 30px;
-}
-#blog .blog-details{
-    width: 100%;
-}
-}
-#header1.blog-header{
-    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
-}
-#blog {
-    padding: 150px 150px 0 150px;
-}
-#blog .blog-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding-bottom: 90px;
-}
-#blog .blog-img{
-    width: 50%;
-    margin-right: 40px;
-}
-#blog img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-#blog .blog-details{
-    width: 50%;
-    padding-left: 50px;
-}
-#blog .blog-details a{
-    text-decoration: none;
-    font-size: 12px;
-    color: black;
-    font-weight: 700;
-    position: relative;
-    transition: 0.3s;
-}
-#blog .blog-details a:hover{
-    color: aquamarine;
-}
-#blog{
-    padding: 100px 20px 0 20px;
-}
-#blog .blog-box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#blog .blog-img{
-    width: 100%;
-    margin-right: 0px;
-    margin-bottom: 30px;
-}
-#blog .blog-details{
-    width: 100%;
-}
-}
-#header1.blog-header{
-    background-image: url("https://www.whiteflash.com/articlefiles/best-jewelry-stores-in-the-world/cartier.jpg");
-}
-#blog {
-    padding: 150px 150px 0 150px;
-}
-#blog .blog-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding-bottom: 90px;
-}
-#blog .blog-img{
-    width: 50%;
-    margin-right: 40px;
-}
-#blog img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-#blog .blog-details{
-    width: 50%;
-    padding-left: 50px;
-}
-#blog .blog-details a{
-    text-decoration: none;
-    font-size: 12px;
-    color: black;
-    font-weight: 700;
-    position: relative;
-    transition: 0.3s;
-}
-#blog .blog-details a:hover{
-    color: aquamarine;
-}
+
 #footer{
     background-color: white;
     padding: 70px 0;
@@ -386,3 +235,11 @@ body{
         margin-bottom: 30px;
     }
 }
+
+
+
+
+
+
+
+
