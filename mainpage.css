@@ -40,6 +40,19 @@ p {
     margin: 40px 0;
 }
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transaction: 0.2s;
+}
+
 body {
     width: 100%;
 }
@@ -248,5 +261,13 @@ product1 .pro:hover{
 #banner h4{
     color:rgb(12, 12, 12);
     font-size: 16px;
+}
 
+#banner h2 span{
+    color:rgb(210, 100, 100);
+}
+
+#banner button:hover{
+    background-color:#088178;
+    color:#fff;
 }
