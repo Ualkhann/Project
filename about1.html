@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+@media(max-width: 477px){
+    .p1{
+        padding: 20px;
+    }
+}
+        #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: whitesmoke;
+    box-shadow: 0 5px 15px black(0, 0, 0, 0.06);
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(5, 5, 5);
+    transition: 0.3s ease;
+}
+#nav li a:hover{
+    color:aquamarine;
+}
+#nav li a.active{
+    color:aquamarine;
+}
+#nav li  a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#nav li  a:hover:after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+        #page-header {
+            background-image: url("./images/WhatsApp\ Image\ 2022-12-19\ at\ 18.50.40.jpeg");
+            height: 40vh;
+           width: 100%;
+           background-size: cover;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           flex-direction: column;
+           padding: 14px;
+           margin-bottom: 100px;
+        }
+        #page-header h1,
+        #page-header p{
+            align-items: center;
+            text-align: center;
+            color: white;
+
+        }
+    
+
+        #about-head img{
+
+            width: 50%;
+            height: 250px;
+            margin-left: 60px;
+            float: 25px;
+            object-position: position;
+            object-fit: unset;
+            margin-bottom: 10px;
+
+        }
+        #about-head {
+            display: flex;
+            align-items: center; 
+            
+        }
+        #about-head h1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #about-head div{
+             padding-left: 50px;
+             padding-right: 60px;
+        }
+       
+        #sectiom-p1{
+            width: 50%;
+            padding-left: 50px;
+            margin-bottom: 100px;
+        }
+
+
+
+
+
+
+
+
+        #letter , #text1{ 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    background-color: rgba(13, 5, 25, 0.852); 
+    background-repeat: no-repeat; 
+    background-position: 20% 30%; 
+    color: white; 
+    padding-top: 50px; 
+    padding-left: 100px; 
+    padding-bottom: 150px; 
+} 
+#letter .form{ 
+    display: flex; 
+    width: 40%; 
+    padding-right: 100px; 
+} 
+#letter h4{ 
+    font-size: 22px; 
+    font-weight: 700; 
+    color: white; 
+} 
+#letter p{ 
+    font-size: 15px; 
+    font-weight: 600; 
+    color: gray; 
+} 
+#letter input{ 
+    height: 50px; 
+    padding: 0 4px; 
+    font-size: 14px; 
+    width: 100%; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    outline: none; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+} 
+#letter button{ 
+    background-color: #088178; 
+    color: white; 
+    white-space: nowrap; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+    font-size: 14px; 
+    font-weight: 600; 
+    padding: 15px 30px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border: none; 
+    outline: none; 
+    transition: 0.2s; 
+} 
+ 
+#footer{ 
+    background-color: white; 
+    padding: 70px 0; 
+} 
+#footer .footer-container{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+#footer .row{ 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+#footer .foot{ 
+    list-style: none; 
+} 
+#footer .footer-col{ 
+    width: 25%; 
+    padding: 0 15px; 
+} 
+#footer .footer-col h4{ 
+    font-size: 18px; 
+    color: #088178; 
+    text-decoration: capitalize; 
+    margin-bottom: 30px; 
+    font-weight: 500; 
+    position: relative; 
+} 
+#footer .footer-col .foot li a{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .foot li a:hover{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: #088178; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .links a{ 
+    display: inline-block; 
+    height: 40px; 
+    width: 40px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px 10px 0; 
+    text-align: center; 
+    line-height: 40px; 
+    color: white; 
+    transition: all 0.5s ease; 
+} 
+#footer .footer-col .links a:hover{ 
+    color: #24262b; 
+    background-color: white; 
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logoo.png" class="logo" alt="" width="90px"></a>
+    <div>
+        <ul id="nav">
+            <li><a href="html.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <a href="#"><img src="https://e7.pngegg.com/pngimages/542/31/png-clipart-shopping-cart-shopping-bags-trolleys-computer-icons-shop-text-rectangle.png" class="logo"  alt="" width="30px"></a>
+        </ul>
+    </div>
+    </section>
+
+
+
+    
+    <section id="page-header">
+        <h1>"KnowsUs"</h1>
+        <p>jhugoihopjpk</p>
+        <br>
+    </section>
+
+<section id="about-head" class="section-p1">
+<img id="about-head" src="./images/Employee_Recognition_Ideas.jpg" >
+
+<script>
+document.getElementById("images").src = "./images/Employee_Recognition_Ideas.jpg";
+</script> 
+<div>
+    <h1>Who you are?</h1>
+    <p>Here you can purchase exquisite jewelry made of red, yellow and white gold 585 and 750 with inserts of precious / semi-precious stones for every day, or for special occasions. The variety of models, as well as stones and jewelry, will pleasantly surprise the most demanding customer.
+
+        In our product range you will find jewelry for men and women with diamonds, pearls, topazes, sapphires, citrines, garnets, quartz, etc. All kinds of shapes and types of cutting, as well as author's mixes of stones and precious metals, make up truly luxurious and unusual compositions.</p>
+    <abbr title=""> jkbjhiosjfp</abbr>
+    <br><br>
+    <marquee  loop="-1" scrollamount="5" width="100%" > jhiwoehdpwiojfo[ewjf[p]] </marquee>
+</div>
+
+</section>
+
+
+<footer class="sectiom-p1">
+
+</footer>
+
+<script scr="script.js"></script>
+
+
+<section id="letter" class="p1"> 
+    <div class="text1"> 
+        <h4>Sign up</h4><br> 
+        <p>Get E-mail updates about our latest shop</p> 
+    </div> 
+    <div class="form"> 
+        <input type="text2" placeholder="You email address"> 
+        <form action="registration.html"><button class="button">Sign Up</button></form> 
+    </div> 
+</section> 
+
+<footer id="footer" class="footer-1"> 
+    <div class="footer-container"> 
+        <div class="row"> 
+           <div class="footer-col"> 
+             <h4>Company</h4><br> 
+             <ul class="foot"> 
+                 <li><a href="#">About us</a></li> 
+                 <li><a href="#">Our services</a></li> 
+                 <li><a href="#">Privacy policy</a></li> 
+                 <li><a href="#">Affiliate program</a></li> 
+             </ul> 
+           </div> 
+
+           <div class="footer-col"> 
+               <h4>Get help</h4><br> 
+               <ul class="foot"> 
+                 <li><a href="#">FAQ</a></li> 
+                 <li><a href="#">Shopping</a></li> 
+                 <li><a href="#">Returns</a></li> 
+                 <li><a href="#">Order Status</a></li> 
+                 <li><a href="#">Payment options</a></li> 
+               </ul> 
+             </div> 
+
+           <div class="footer-col"> 
+             <h4>Online shop</h4><br> 
+             <ul class="foot"> 
+                 <li><a href="#">Earrings</a></li> 
+                 <li><a href="#">Necklace</a></li> 
+                 <li><a href="#">Bracelet</a></li> 
+                 <li><a href="#">Ring</a></li> 
+             </ul> 
+           </div> 
+
+           <div class="footer-col"> 
+             <h4>Follow us</h4><br> 
+             <div class="links"> 
+                 <a href="#"><img src="Instagram1.png" width="40px"></a> 
+                 <a href="#"><img src="TikTok1.png" width="45px"></a> 
+                 <a href="#"><img src="Twitter1.png" width="40px"></a> 
+                 <a href="#"><img src="WhatsApp1.png" width="40px"></a> 
+                 <a href="#"><img src="Facebook1.png" width="35px"></a> 
+             </div> 
+         </div> 
+
+        </div> 
+    </div> 
+</footer>
+
+</body>
+</html>
