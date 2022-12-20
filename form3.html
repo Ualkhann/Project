@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Firstname must be filled out");
+        return false;
+      }
+    }
+
+   
+    </script>
+
+
+
+
+    <style>
+     body {
+        background-color: rgb(0, 251, 255);
+}
+
+#form {
+    width: 450px;
+   
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+#form h1 {
+    color: #0f2027;   
+}
+li{
+    display: inline;
+}
+  
+
+
+    </style>
+</head>
+<body>
+    
+    
+
+
+
+    <div class="container">
+        <form id="form" action="/" name="myForm" onsubmit="return validateForm()" method="post">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="firstname">Firstname:</label>
+                <input id="firstnam" name="fname" type="text" >
+                <div class="error"></div>
+            </div>
+
+
+            
+            <div class="input-control">
+                <label for="lastname">Lastname:</label>
+                <input id="lastname" name="lastname"  id="name"  type="text" required >
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="username">Username:</label>
+                <input id="username"name="username" type="username" required >
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" required>
+                <div class="error"></div>
+            </div>
+
+            Short bio: <textarea></textarea><br>
+            
+            State: <select name="State:" >
+                <option>Select State</option><option>Kazakhstan</option><option>USA</option>
+            </select><br>
+
+            
+                Gender: <input type="radio" name="jk" value="Male" > Male 
+                <input type="radio" name="jk" value="Female"> Female
+                <input type="radio" name="jk" value="Other"> Other 
+                <br>
+                Marital Status: <input type="radio" name="jk" value="Single" > Single 
+                <input type="radio" name="jk" value="Married">Married
+                <input type="radio" name="jk" value="Other"> Other
+                <br>
+                Courses Taken: <input type="checkbox" name="COP-3330" d> COP-3330
+                <input type="checkbox" name="CGS-3066"> CGS-3066
+                <input type="checkbox" name="COP-5930"> COP-5930
+                <br>
+                <input type="checkbox" name="Sign-up for our newsletter?"> Sign-up for our newsletter?
+                <br>
+                <input type="checkbox" name="Do you want an ice cream?"> Do you want an ice cream?
+                <br>
+                
+                <button type="submit">Validate</button>
+            <button type="Reset">Reset</button>
+            
+            
+
+            
+            
+        </form>
+    </div>
+</body>
+</html>
