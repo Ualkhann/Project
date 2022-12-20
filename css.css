@@ -60,7 +60,7 @@ body{
 }
 
 #header1{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsgpXNEu5FC7_YdT6yNS07bIOMhf0yEPs2znD9Q-d9WRkQIeA9g3PlUEESw8_hV2VV88k&usqp=CAU");
+    background-image: url("https://margulis.com/wp-content/uploads/2018/12/DSC_8940.jpg");
     width: 100%;
     height: 40vh;
     background-color: cover;
@@ -72,6 +72,26 @@ body{
     color: white;
     font-size: 35px;
 }
+#header1 .blog-header{
+    background-image: url("https://margulis.com/wp-content/uploads/2018/12/DSC_8940.jpg");
+    width: 100%;
+    height: 40vh;
+    background-color: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+    font-size: 35px;
+    
+}
+.scale {
+    transition: 1s; 
+   }
+.scale:hover {
+    transform: scale(0.9); 
+   }
 #page{
     text-align: center;
 }
@@ -229,12 +249,7 @@ body{
     color: #24262b;
     background-color: white;
 }
-@media (max-width: 767px){
-    .footer-col{
-        width: 25%;
-        margin-bottom: 30px;
-    }
-}
+
 
 
 
