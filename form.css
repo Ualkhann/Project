@@ -1,18 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Spartan', sans-serif;
 
-body {
-    background: #f6f5f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    margin: -20px 0 50px;
 }
 
 h1 {
@@ -45,8 +38,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
+    border: 1px solid #088178;
+    background-color: #088178;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -87,6 +80,54 @@ input {
     margin: 8px 0;
     width: 100%;
 }
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index:999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav li{
+    list-style:none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+}
+
+#nav li a:hover,
+#nav li a.active {
+    color:#088178;
+}
+
+#nav li a.active::after, 
+#nav li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
 
 .container {
     background-color: #fff;
@@ -98,6 +139,13 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
 }
 
 .form-container {
@@ -159,9 +207,9 @@ input {
 }
 
 .overlay {
-    background: #FF416C;
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: #088178;
+    background: -webkit-linear-gradient(to right, #088178, #088179);
+    background: linear-gradient(to right, #088176, #088179);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -224,28 +272,65 @@ input {
     height: 40px;
     width: 40px;
 }
+#footer{ 
+    background-color: white; 
+    padding: 70px 0; 
+} 
+#footer .footer-container{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+#footer .row{ 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+#footer .foot{ 
+    list-style: none; 
+} 
+#footer .footer-col{ 
+    width: 25%; 
+    padding: 0 15px; 
+} 
+#footer .footer-col h4{ 
+    font-size: 18px; 
+    color: #088178; 
+    text-decoration: capitalize; 
+    margin-bottom: 30px; 
+    font-weight: 500; 
+    position: relative; 
+} 
+#footer .footer-col .foot li a{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 300; 
+    color: black; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .foot li a:hover{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: #088178; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .links a{ 
+    display: inline-block; 
+    height: 40px; 
+    width: 40px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px 10px 0; 
+    text-align: center; 
+    line-height: 40px; 
+    color: white; 
+    transition: all 0.5s ease; 
+} 
+#footer .footer-col .links a:hover{ 
+    color: #24262b; 
+    background-color: white; 
 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0; b
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }
