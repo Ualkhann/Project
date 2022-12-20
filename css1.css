@@ -63,7 +63,7 @@ body{
 }
 
 #header1{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsgpXNEu5FC7_YdT6yNS07bIOMhf0yEPs2znD9Q-d9WRkQIeA9g3PlUEESw8_hV2VV88k&usqp=CAU");
+    background-image: url("shop.png");
     width: 100%;
     height: 40vh;
     background-color: cover;
@@ -72,7 +72,7 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 15px;
-    color: white;
+    color: black;
     font-size: 35px;
 }
 
@@ -136,6 +136,28 @@ body{
     bottom: 50px;
     right: -120px;
 }
+.shop img {
+    width: 300px;
+    height: 300px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+     transition: all 2s ease;
+  }
+  
+  .shop img:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+    box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+  }
+
+
+
+
+
 #page{
     text-align: center;
 }
@@ -239,7 +261,6 @@ body{
     color: black;
     text-decoration: none;
     font-weight: 300;
-    color: black;
     display: block;
     margin-bottom: 10px;
 }
