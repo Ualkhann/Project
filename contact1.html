@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:  'Spartan', sans-serif;   
+        }
+        body{
+              width: 100%;
+         }
+        @media(max-width: 477px){
+    .p1{
+        padding: 20px;
+    }
+ }
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: whitesmoke;
+    box-shadow: 0 5px 15px black(0, 0, 0, 0.06);
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+    transition: 0.3s ease;
+}
+#nav li a:hover{
+    color:aquamarine;
+}
+#nav li a .img{
+    width: 100px;
+    height: 200px;
+}
+#nav li a.active{
+    color:aquamarine;
+}
+#nav li  a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#nav li  a:hover:after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero{
+    background-image: url("./images/WhatsApp\ Image\ 2022-12-19\ at\ 18.50.40.jpeg");
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#hero h1,
+#hero p{
+    color: #fff;
+
+}
+
+        #contact-details{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        #contact-details .detalis{
+            width: 40%;
+        }
+        #contact-details.details span,
+        #form-details form span {
+            font-size: 12px;
+        }
+        #contact-details .detalis .h2,
+        #form-details form h2{
+            font-size: 26px;
+            line-height: 35px;
+            padding: 20px 0;
+        }
+        #contact-details .detalis .h3{
+            font-size: 16px;
+            padding-bottom: 15px;
+        }
+        #contact-details .detalis li{
+            list-style: none;
+            display: flex;
+            padding: 10px 0;
+        }
+        #contact-details .detalis li i{
+            font-size: 14px;
+            padding-right: 22px;
+        }
+        #contact-details .detalis li p{
+            margin: 0;
+            font-size: 14px;
+        }
+        #contact-details .map{
+            width: 55%;
+            height: 400px;
+        }
+        #contact-details .map iframe{
+            width: 100%;
+            height: 100%;
+        }
+        #form-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+            gap: 1rem;
+            margin-top: 2rem;
+            margin: 30px;
+            
+        }
+        #form-details .box{
+            padding: 10px;
+            border: 2px solid var(--text-color);
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+        #form-details .box img{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        #form-details form{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #form-details form input,
+        #form-details form textarea{
+            width: 100%;
+            
+            outline: none;
+            margin-bottom: 20px;
+            border: 1px solid #e1e1e1;
+        }
+        #form-details form button{
+            background-color: #088178;
+            color: #fff;
+            
+        }
+        #form-details .people div{
+            padding: 10px;
+            border: 2px solid var(--text-color);
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            align-items: flex-start;
+        }
+        #form-details .people div img{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        #form-details .people div p{
+            font-size: 0.938rem;
+            font-style: italic;
+            margin: 0.5rem 0.5rem;
+        }
+        #form-details .people div p span{
+            font-style: italic;
+            margin: 0.5rem 0.5rem;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+
+        #letter , #text1{ 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    background-color: rgba(13, 5, 25, 0.852); 
+    background-repeat: no-repeat; 
+    background-position: 20% 30%; 
+    color: white; 
+    padding-top: 50px; 
+    padding-left: 100px; 
+    padding-bottom: 150px; 
+} 
+#letter .form{ 
+    display: flex; 
+    width: 40%; 
+    padding-right: 100px; 
+} 
+#letter h4{ 
+    font-size: 22px; 
+    font-weight: 700; 
+    color: white; 
+} 
+#letter p{ 
+    font-size: 15px; 
+    font-weight: 600; 
+    color: gray; 
+} 
+#letter input{ 
+    height: 50px; 
+    padding: 0 4px; 
+    font-size: 14px; 
+    width: 100%; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    outline: none; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+} 
+#letter button{ 
+    background-color: #088178; 
+    color: white; 
+    white-space: nowrap; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+    font-size: 14px; 
+    font-weight: 600; 
+    padding: 15px 30px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border: none; 
+    outline: none; 
+    transition: 0.2s; 
+} 
+ 
+#footer{ 
+    background-color: white; 
+    padding: 70px 0; 
+} 
+#footer .footer-container{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+#footer .row{ 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+#footer .foot{ 
+    list-style: none; 
+} 
+#footer .footer-col{ 
+    width: 25%; 
+    padding: 0 15px; 
+} 
+#footer .footer-col h4{ 
+    font-size: 18px; 
+    color: #088178; 
+    text-decoration: capitalize; 
+    margin-bottom: 30px; 
+    font-weight: 500; 
+    position: relative; 
+} 
+#footer .footer-col .foot li a{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .foot li a:hover{ 
+    font-size: 16px; 
+    text-transform: capitalize; 
+    color: #088178; 
+    text-decoration: none; 
+    font-weight: 300; 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+#footer .footer-col .links a{ 
+    display: inline-block; 
+    height: 40px; 
+    width: 40px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px 10px 0; 
+    text-align: center; 
+    line-height: 40px; 
+    color: white; 
+    transition: all 0.5s ease; 
+} 
+#footer .footer-col .links a:hover{ 
+    color: #24262b; 
+    background-color: white; 
+}
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logoo.png" class="logo" alt="" width="90px"></a>
+    <div>
+        <ul id="nav">
+            <li><a href="html.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <a href="#"><img src="https://e7.pngegg.com/pngimages/542/31/png-clipart-shopping-cart-shopping-bags-trolleys-computer-icons-shop-text-rectangle.png" class="logo"  alt="" width="30px"></a>
+        </ul>
+    </div>
+    </section>
+
+    <section id="hero">
+        <h1>Stay home</h1>
+        <p>bwgeiuwhiodwpop[wd</p>
+    </section>
+
+    
+
+
+    
+
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN YOUCH</span>
+            <h2>Visit one of our agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>56 Glassford Street Glasgow G1 1UL New York</p>
+                </li>
+                <li>
+                    <i class="fal fa-envelope"></i>
+                    <p>contact@diamond.com</p>
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p><contact@diamond.com</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>Monday to Saturday: 9.00am to 16.pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.5737133069088!2d76.9276667!3d43.2184297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f30f7a99069%3A0x7adb88ae41e2c540!2sEsentai%20Mall!5e0!3m2!1sen!2skz!4v1671440984161!5m2!1sen!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+        </div>
+    </section>
+
+    <section id="form-details">
+        
+        <div class="people">
+            <div class="box">
+                <img id="form-details" src="./images/WhatsApp Image 2022-12-19 at 16.01.19.jpeg" >
+
+                 <script>
+                   document.getElementById("images").src = "./images/WhatsApp Image 2022-12-19 at 16.01.19.jpeg";
+                 </script> 
+                 
+                 <p><span>Ualkhan Ayaulym</span>Senior Marketing Manager <br>Phone: +7775 634 2570<br> Email: 2101030912@stu.sdu.edu.kz</p>
+            </div>
+            <div class="box">
+                <img id="form-details" src="./images/WhatsApp Image 2022-12-19 at 16.04.59.jpeg" >
+
+                 <script>
+                   document.getElementById("images").src = "./images/WhatsApp Image 2022-12-19 at 16.04.59.jpeg";
+                 </script> 
+                 <p><span>Dauylkyzy Aigerim</span>Senior Marketing Manager <br>Phone: +7708 295 9298<br> Email: 210103466@stu.sdu.edu.kz</p>
+            </div>
+            <div class="box">
+                <img id="form-details" src="./images/WhatsApp Image 2022-12-19 at 16.01.01.jpeg" >
+
+                 <script>
+                   document.getElementById("images").src = "./images/WhatsApp Image 2022-12-19 at 16.01.01.jpeg";
+                 </script> 
+                 <p><span>Yergasheva Gauhar</span>Senior Marketing Manager <br>Phone: +7707 857 07 00<br> Email: 210103081@stu.sdu.edu.kz</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <section id="letter" class="p1"> 
+        <div class="text1"> 
+            <h4>Sign up</h4><br> 
+            <p>Get E-mail updates about our latest shop</p> 
+        </div> 
+        <div class="form"> 
+            <input type="text2" placeholder="You email address"> 
+            <form action="registration.html"><button class="button">Sign Up</button></form> 
+        </div> 
+    </section> 
+ 
+    <footer id="footer" class="footer-1"> 
+        <div class="footer-container"> 
+            <div class="row"> 
+               <div class="footer-col"> 
+                 <h4>Company</h4><br> 
+                 <ul class="foot"> 
+                     <li><a href="#">About us</a></li> 
+                     <li><a href="#">Our services</a></li> 
+                     <li><a href="#">Privacy policy</a></li> 
+                     <li><a href="#">Affiliate program</a></li> 
+                 </ul> 
+               </div> 
+  
+               <div class="footer-col"> 
+                   <h4>Get help</h4><br> 
+                   <ul class="foot"> 
+                     <li><a href="#">FAQ</a></li> 
+                     <li><a href="#">Shopping</a></li> 
+                     <li><a href="#">Returns</a></li> 
+                     <li><a href="#">Order Status</a></li> 
+                     <li><a href="#">Payment options</a></li> 
+                   </ul> 
+                 </div> 
+  
+               <div class="footer-col"> 
+                 <h4>Online shop</h4><br> 
+                 <ul class="foot"> 
+                     <li><a href="#">Earrings</a></li> 
+                     <li><a href="#">Necklace</a></li> 
+                     <li><a href="#">Bracelet</a></li> 
+                     <li><a href="#">Ring</a></li> 
+                 </ul> 
+               </div> 
+  
+               <div class="footer-col"> 
+                 <h4>Follow us</h4><br> 
+                 <div class="links"> 
+                     <a href="#"><img src="Instagram1.png" width="40px"></a> 
+                     <a href="#"><img src="TikTok1.png" width="45px"></a> 
+                     <a href="#"><img src="Twitter1.png" width="40px"></a> 
+                     <a href="#"><img src="WhatsApp1.png" width="40px"></a> 
+                     <a href="#"><img src="Facebook1.png" width="35px"></a> 
+                 </div> 
+             </div> 
+  
+            </div> 
+        </div> 
+    </footer>
+    
+</body>
+</html>
